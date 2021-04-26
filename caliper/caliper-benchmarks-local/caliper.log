@@ -1,0 +1,19 @@
+2020.11.05-21:30:27.153[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.11.05-21:30:27.235[33m warn [39m [caliper] [bind] 	Working directory for binding not specified. Using "/errc2020/errc2020-hyperledgerfabric/caliper/caliper-benchmarks-local"
+2020.11.05-21:30:27.236[32m info [39m [caliper] [bind] 	Binding for fabric@2.1.0. This might take some time...
+2020.11.05-21:30:27.236[32m info [39m [caliper] [bind] 	Binding working directory: /errc2020/errc2020-hyperledgerfabric/caliper/caliper-benchmarks-local
+2020.11.05-21:30:27.236[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-common@2.1.0 fabric-protos@2.1.0 fabric-network@2.1.0 fabric-ca-client@2.1.0
+2020.11.05-21:31:12.722[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.11.05-21:31:12.808[32m info [39m [caliper] [cli-launch-master] 	Binding specification is present, performing binding for "fabric:2.1.0"
+2020.11.05-21:31:12.810[33m warn [39m [caliper] [bind] 	Working directory for binding not specified. Using "/errc2020/errc2020-hyperledgerfabric/caliper/caliper-benchmarks-local"
+2020.11.05-21:31:12.810[32m info [39m [caliper] [bind] 	Binding for fabric@2.1.0. This might take some time...
+2020.11.05-21:31:12.810[32m info [39m [caliper] [bind] 	Binding working directory: /errc2020/errc2020-hyperledgerfabric/caliper/caliper-benchmarks-local
+2020.11.05-21:31:12.810[32m info [39m [caliper] [bind] 	Calling npm with: install fabric-common@2.1.0 fabric-protos@2.1.0 fabric-network@2.1.0 fabric-ca-client@2.1.0
+2020.11.05-21:31:18.198[32m info [39m [caliper] [cli-launch-master] 	Set workspace path: /errc2020/errc2020-hyperledgerfabric/caliper/caliper-benchmarks-local
+2020.11.05-21:33:35.772[90m debug[39m [caliper] [blockchain] 	Constructed a winston logger with the specified settings
+2020.11.05-21:33:35.855[33m warn [39m [caliper] [bind] 	Working directory for binding not specified. Using "/errc2020/errc2020-hyperledgerfabric/caliper/caliper-benchmarks-local"
+2020.11.05-21:33:35.855[32m info [39m [caliper] [bind] 	User-provided arguments for "npm install": "-g"
+2020.11.05-21:33:35.855[32m info [39m [caliper] [bind] 	Binding for fabric@2.1.0. This might take some time...
+2020.11.05-21:33:35.856[32m info [39m [caliper] [bind] 	Binding working directory: /errc2020/errc2020-hyperledgerfabric/caliper/caliper-benchmarks-local
+2020.11.05-21:33:35.856[32m info [39m [caliper] [bind] 	Calling npm with: install -g fabric-common@2.1.0 fabric-protos@2.1.0 fabric-network@2.1.0 fabric-ca-client@2.1.0
+2020.11.05-21:33:49.946[31m error[39m [caliper] [bind] 	Failed to execute "npm" with return code 1.

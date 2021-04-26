@@ -1,0 +1,27 @@
+---
+test:
+  name: simple
+  description: This is an example benchmark for caliper, to test the backend DLT's
+    performance with simple account opening & querying transactions
+  workers:
+    type: local
+    number: 2
+  rounds:
+  - label: open
+    description: Test description for the opening of an account through the deployed chaincode
+    txNumber: 600
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 100
+    arguments:
+      txnPerBatch: 1
+    callback: benchmarks/scenario/simple/pavan/open.js
+monitor:
+  monitor:
+  type:
+  - docker
+  docker:  
+    containers:
+    - all
+  interval: 1

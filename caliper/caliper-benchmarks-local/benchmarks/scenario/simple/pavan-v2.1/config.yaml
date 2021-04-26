@@ -1,0 +1,60 @@
+test:
+  name: simple
+  description: This is an example benchmark for caliper, to test the backend DLT's
+    performance with simple account opening & querying transactions
+  workers:
+    type: local
+    number: 1
+  rounds:
+  - label: 5000/500
+    description: Test description for the opening of an account through the deployed chaincode
+    txNumber: 5000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 500
+    workload:
+      module: caliper-benchmarks-local/benchmarks/scenario/simple/pavan-v2.1/open.js
+      arguments:
+        # money: 10000
+        contractId: fabcar
+  - label: 10000/1000
+    description: Test description for the opening of an account through the deployed chaincode
+    txNumber: 10000
+    rateControl:
+      type: fixed-rate
+      opts:
+        tps: 1000
+    workload:
+      module: caliper-benchmarks-local/benchmarks/scenario/simple/pavan-v2.1/open.js
+      arguments:
+        # money: 10000
+        contractId: fabcar  
+  # arguments:
+  #   money: 10000
+  # callback: benchmarks/scenario/simple/pavan-v2.1/open.js
+  # - label: query
+  #   description: Test description for the query performance of the deployed chaincode
+  #   txNumber: 100
+  #   rateControl:
+  #     type: fixed-rate
+  #     opts:
+  #       tps: 100
+  #   callback: benchmarks/scenario/simple/query.js
+  # - label: transfer
+  #   description: Test description for transfering money between accounts
+  #   txNumber: 100
+  #   rateControl:
+  #         type: fixed-rate
+  #         opts:
+  #             tps: 50
+  #   arguments:
+  #       money: 100
+  #   callback: benchmarks/scenario/simple/transfer.js
+# monitor:
+#   type:
+#   - docker
+#   docker:
+#     name:
+#     - all
+#   interval: 1

@@ -1,0 +1,1 @@
+[31m2020-11-05 19:58:17.000 -03 [main] InitCmd -> ERRO 001[0m Fatal error when initializing core config : FABRIC_CFG_PATH /errc2020/errc2020-hyperledgerfabric/caliper/artifacts/channel/config/ does not exist
